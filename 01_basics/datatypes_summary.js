@@ -45,7 +45,7 @@ Static typing, on the other hand, provides better type safety at the cost of som
 
 */
 
-
+       
 
 // REFERENCE (NON-PRIMITIVE)
 
@@ -62,10 +62,42 @@ const myFunction = function(){
     console.log("Hello World!");
 }
 
-console.log(typeof myFunction); //shows function but is actually object function.
+//console.log(typeof myFunction); //shows function but is actually object function.
 
 // All non-primitive data types return the type objects.
 
+
+
+
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MEMORY +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let  myName = "muskankumari";
+
+let anotherName = myName;
+
+anotherName = "khushi";
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com", 
+    upi : "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "muskan@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
 
 
 
